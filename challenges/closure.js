@@ -4,18 +4,18 @@
 // 
 
 
-const external = "I'm outside the function";
+// const external = "I'm outside the function";
 
-function myFunction() {
-  console.log(external);
-  const internal = "Hello! I'm inside myFunction!";
+// function myFunction() {
+//   console.log(external);
+//   const internal = "Hello! I'm inside myFunction!";
 
-  function nestedFunction() {
-    console.log(internal);
-  };
-  nestedFunction();
-}
-myFunction();
+//   function nestedFunction() {
+//     console.log(internal);
+//   };
+//   nestedFunction();
+// }
+// myFunction();
 
 // Explanation: 
 // The nested function can access the variable internal, because the variable is within nested functions scope.
@@ -24,13 +24,21 @@ myFunction();
 
 /* Create a function called `sumation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
 
-function sumation(num){
-  let count = num
-  return function sum(a){
-    count++
-  }
-  }
-console.log(sumation(4))
+
+  // let i = num 
+  // if i  < num i --
+  // count as a total
+  // return out total outside of the for loop
+  function sumation(num) 
+  {
+    let sum = 0
+    for (let i = num; i <= num; i-- )  {
+      sum += i
+    }
+  return sum
+    }
+    
+  console.log(sumation(4))
 
 // function counterMaker() {
 //   let count = 0;
